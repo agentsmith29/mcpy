@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MCControlWindow</class>
+ <widget class="QWidget" name="MCControlWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>510</width>
+    <height>532</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="grd_mcm_members">
+     <item row="0" column="1">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="1">
+        <widget class="QLabel" name="lbl_samples_n">
+         <property name="text">
+          <string>Number of Samples</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLabel" name="lbl_exp_uncert">
+         <property name="text">
+          <string>Expanded Uncertainty</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Mean</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2" colspan="3">
+        <widget class="QLineEdit" name="txt_std"/>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLineEdit" name="txt_cov"/>
+       </item>
+       <item row="1" column="2" colspan="3">
+        <widget class="QLineEdit" name="text_samples_n"/>
+       </item>
+       <item row="5" column="3">
+        <widget class="QLabel" name="lbl_cov_factor">
+         <property name="text">
+          <string>Coverage Factor</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2" colspan="3">
+        <widget class="QLineEdit" name="txt_mean"/>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLabel" name="lbl_coverage">
+         <property name="text">
+          <string>Coverage [%]</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1" colspan="4">
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::HLine</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="2" colspan="3">
+        <widget class="QLineEdit" name="txt_unit"/>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="lbl_std">
+         <property name="text">
+          <string>Standard Deviation</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1" colspan="4">
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::HLine</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="4">
+        <widget class="QLineEdit" name="txt_cov_factor"/>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLabel" name="lbl_unit">
+         <property name="text">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2" colspan="3">
+        <widget class="QLineEdit" name="lineEdit_3"/>
+       </item>
+       <item row="0" column="1" colspan="4">
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Monte Carlo Samples</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_plot_area">
+      <attribute name="title">
+       <string>Sample Plot</string>
+      </attribute>
+      <layout class="QGridLayout" name="grd_plot_area"/>
+     </widget>
+     <widget class="QWidget" name="tab_description">
+      <attribute name="title">
+       <string>Description</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QLabel" name="lbl_description">
+           <property name="text">
+            <string>Description</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPlainTextEdit" name="txt_description">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>250</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

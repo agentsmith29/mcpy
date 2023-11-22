@@ -1,0 +1,20 @@
+[project]
+name = "mcpy"
+version = "0.0.1b"
+authors = [
+  { name="Christoph Schmidt", email="cschmidt.fs@gmail.com" },
+]
+description = "A module for working with monte carlo analysis."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    'pyside6','numpy','scipy','pandas','matplotlib','PySide6 '
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3.0",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.tugraz.at/flexsensor/mcpy"
